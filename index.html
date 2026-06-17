@@ -358,6 +358,8 @@
     color: #b8860b; /* Tono champagne/dorado */
 }
 
+
+
 @media (max-width:768px){
 
     html,body{
@@ -369,10 +371,19 @@
     body{
         margin:0!important;
         padding:15px 0!important;
+
         background-image:url('fotofondo.jpg')!important;
-        background-size:100% auto!important;
+
+        /* ocupa toda la página */
+        background-size:cover!important;
+
+        /* queda centrado desde arriba */
         background-position:center top!important;
-        background-repeat:no-repeat;
+
+        /* no se repite */
+        background-repeat:no-repeat!important;
+
+        /* se mueve con el contenido */
         background-attachment:scroll!important;
     }
 
@@ -410,12 +421,10 @@
     .tarjeta-evento,
     .card-final,
     .card-pases{
-
         width:88%!important;
         max-width:500px!important;
         margin:auto!important;
         box-sizing:border-box!important;
-
     }
 
 
@@ -458,8 +467,6 @@
         font-size:1.5rem!important;
         padding:12px 4px!important;
     }
-
-
 
 }
 
