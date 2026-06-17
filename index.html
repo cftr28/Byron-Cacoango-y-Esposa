@@ -362,10 +362,6 @@
    CELULARES
    ============================== */
 
-/* ==============================
-   CELULARES
-   ============================== */
-
 @media (max-width:768px){
 
     html,body{
@@ -374,11 +370,10 @@
         overflow-x:hidden;
     }
 
-
     body{
 
         background-image:url('fotofondo.png') !important;
-        background-size:cover !important;
+        background-size:100% auto !important;
         background-position:center top !important;
         background-repeat:no-repeat !important;
         background-attachment:scroll !important;
@@ -386,26 +381,15 @@
         margin:0 !important;
         padding:15px 0 !important;
         background-color:#fafafa !important;
-
-        image-rendering:auto!important;
-    }
-.fondo-boda {
-        /* Cambiamos a la imagen de celular */
-        background-image: url('fotofondo.png') !important;
-        /* IMPORTANTE: Quitamos el 'fixed' en móviles para evitar la distorsión */
-        background-attachment: scroll !important;
     }
 
     .container{
-
         width:100%!important;
         max-width:100%!important;
         padding:0!important;
-
     }
 
 
-    /* tarjetas generales */
     .contenedor-cards,
     .contenedor-tarjetas{
 
@@ -422,8 +406,8 @@
     .card-final,
     .card-pases{
 
-        width:88%!important;
-        max-width:500px!important;
+        width:calc(100% - 24px)!important;
+        max-width:none!important;
         margin-left:auto!important;
         margin-right:auto!important;
         box-sizing:border-box!important;
@@ -431,62 +415,15 @@
     }
 
 
-    /* portada */
-
-    .boton-play{
-
-        margin-top:20px!important;
-        margin-bottom:25px!important;
-
-    }
-
-
-    .circulo-play{
-
-        width:45px!important;
-        height:45px!important;
-
-    }
-
-
-    .texto-play{
-
-        font-size:1.3rem!important;
-
-    }
-
-
-    .nombres{
-
-        font-size:2.8rem!important;
-        line-height:1.1!important;
-        margin-bottom:15px!important;
-
-    }
-
-
-    .fecha{
-
-        font-size:1.1rem!important;
-        margin-bottom:20px!important;
-
-    }
-
-
     .foto-boda{
 
-        width:75%!important;
-        max-width:260px!important;
+        width:70%!important;
+        max-width:230px!important;
         height:auto!important;
-        border:6px solid white!important;
-        box-shadow:0 5px 15px rgba(0,0,0,.15)!important;
-        margin:10px auto 25px auto!important;
+        margin:0 auto 25px auto!important;
 
     }
 
-
-
-    /* fotos dobles */
 
     .contenedor-dos-fotos{
 
@@ -500,14 +437,19 @@
 
     .foto-boda-doble{
 
-        width:75%!important;
-        max-width:240px!important;
+        width:90%!important;
+        max-width:320px!important;
 
     }
 
 
+    .nombres{
 
-    /* textos */
+        font-size:3rem!important;
+        line-height:1.1!important;
+
+    }
+
 
     .frase-boda{
 
@@ -523,9 +465,6 @@
 
     }
 
-
-
-    /* contador */
 
     .contador-container{
 
@@ -548,9 +487,6 @@
 
     }
 
-
-
-    /* botones */
 
     .boton-llegar,
     .boton-confirmar,
