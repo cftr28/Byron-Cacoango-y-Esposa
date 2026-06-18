@@ -265,6 +265,7 @@
             border: none;
             margin-top: 20px;
             cursor: pointer;
+            text-decoration: none;
         }
 
         /* ==========================================================================
@@ -404,7 +405,6 @@
     .circulo-play { width:45px!important; height:45px!important; } 
     .texto-play { font-size:1.3rem!important; display: block !important; } 
     
-    .nombres { font-size:2.8rem!important; line-height:1.1!important; margin-bottom:15px!important; } 
     .fecha { font-size:1.1rem!important; margin-bottom:20px!important; } 
     
     .foto-boda { width:75%!important; max-width:260px!important; height:auto!important; border:6px solid white!important; box-shadow:0 5px 15px rgba(0,0,0,.15)!important; margin:10px auto 25px auto!important; } 
@@ -443,12 +443,14 @@
     font-weight: bold !important;
 }
 /* 1. Estilo de letra para los novios */
-    .nombres, .nombres-final {
-        font-family: 'Dancing Script', cursive !important; /* Asegúrate de tener esta fuente importada */
-        font-size: 3rem !important; 
+   /* 1. Estilo de letra para los novios (Inicio y Final) */
+    .nombres, .nombres-final, .nombres-cierre {
+        font-family: 'Dancing Script', cursive !important; 
+        font-size: 2rem !important; 
         line-height: 1.2 !important;
-        margin-bottom: 10px !important;
-        color: #555 !important; /* Ajusta este color al gris de la foto */
+        margin-bottom: 15px !important;
+        color: #555 !important; 
+        text-align: center !important;
     }
 /* ==============================
    TARJETAS DE PADRES Y PADRINOS
